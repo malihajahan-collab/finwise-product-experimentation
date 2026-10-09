@@ -1,65 +1,170 @@
-# The Mechanic · FinWise
+# FinWise — Engagement Strategy & Cash Plan Freshness
 
-> Engagement Strategy · Building a Valuable Return Loop
-
-## Chosen gamification mechanic: Cash Plan Freshness
-
-**Cash Plan Freshness** is a weekly status mechanism that makes the user’s forecast freshness visible. After a user has reviewed a personalized cash-flow action, FinWise marks their 30-day cash plan as **Current**. When a material change affects the forecast—for example, a projected cash-buffer breach, a material invoice change, or a meaningful change in upcoming outgoings—the status becomes **Needs review** and shows one recommended action. Reviewing that action restores the Current status for the week.
-
-Cash Plan Freshness mockup
-<img width="647" height="427" alt="image" src="https://github.com/user-attachments/assets/9f82eb06-c883-4ea8-998b-78e6e7490684" />
-
-### What the user sees and when
-
-| Moment | Experience |
-| --- | --- |
-| After first Aha | A simple status: **“Your cash plan is current.”** The user sees the forecast horizon and the action they just reviewed. |
-| Weekly operating cycle | A quiet in-product reminder appears only if the plan has new, material information to review. |
-| Material forecast change | The status changes to **“Your cash plan needs review”** and names the single relevant action, such as reviewing invoices that affect the projected buffer. |
-| After review | FinWise confirms that the plan is current again and shows what changed in the forecast. |
-
-### Intrinsic motivation and cadence
-
-The primary motivation is **loss aversion**, grounded in a real loss: allowing a cash plan to become stale can mean discovering a buffer risk or delayed invoice too late. This is deliberately **not a streak**. Small-business cash management has a natural **weekly** cadence, so FinWise earns a return when the forecast has changed materially instead of demanding a daily check-in or penalizing a missed app open.
-
-### Rationale
-
-Cash Plan Freshness reinforces the same behavior that defines FinWise’s candidate Aha moment—reviewing a personalized cash-flow recommendation—rather than rewarding arbitrary clicks, points, or time in the product. The mechanism gives users a practical reason to return each week: keep their financial plan current when conditions change. It supports Module 1 and Module 2 by creating more repeat occasions for users to experience personalized value; it does not replace the post-Aha paid-plan experiment. If FinWise’s recommendations are generic, inaccurate, or do not lead to useful decisions, the status alone will not prevent churn, so each review must show the specific forecast change and the outcome of the recommended action.
+> **Engagement principle:** Give users a reason to return when their financial situation changes—not simply because the product wants another app open.
 
 ---
 
-## Engagement Weighted Scorecard
+## The Engagement Problem
 
-The original scorecard used average session duration as a depth proxy. For this mechanic, that is too indirect: longer sessions can reflect friction rather than value. This mechanic-specific scorecard tracks the user behaviors that Cash Plan Freshness is designed to move.
+FinWise needs repeat usage after the first personalized cash-flow insight.
 
-| Dimension | Mechanic-specific metric | Weight | Baseline proxy from available data | Current score | Weighted |
-| --- | --- | ---: | --- | ---: | ---: |
-| **Depth** | Share of eligible users who review a personalized cash-flow action after a material forecast change. | 50% | Financial-modeling usage: **36.73%** (until action-review tracking exists). | 3 | 1.50 |
-| **Breadth** | Share of users completing the core workflow: account import → first financial model → recommended-action review. | 30% | Average of data import (39.04%) and modeling (36.73%): **37.89%**. This is a proxy, not a user-level completion rate. | 3 | 0.90 |
-| **Frequency** | Average weekly cash-plan reviews per eligible user. | 20% | Sessions per user: **6.62** (until weekly review events are tracked). | 7 | 1.40 |
-| **Cash Plan Engagement KPI** | `0.50 × depth score + 0.30 × breadth score + 0.20 × frequency score` | **100%** |  |  | **3.80 / 10** |
+But increasing session frequency alone would not necessarily create value.
 
-**Baseline interpretation: Needs improvement.** The strongest observable signal is return frequency, but fewer than 40% of users reach either core workflow action. The mechanic should improve meaningful action completion and repeat review—not simply create longer sessions or more notification opens.
+A useful engagement mechanism should bring the user back when there is a meaningful financial decision to review.
 
-### What each metric must move
+That led to **Cash Plan Freshness**.
 
-- **Depth:** More eligible users should review the action tied to a material forecast change. This is the direct repeat of `personalized_cashflow_action_reviewed`.
-- **Breadth:** More users should progress through the complete value chain: account data → financial model → recommended action. This protects against “engagement” that never reaches core product value.
-- **Frequency:** More eligible users should return on a weekly cadence when their cash plan changes materially, rather than being prompted to open FinWise every day.
+---
 
-### Measurement plan
+## Cash Plan Freshness
 
-| Item | Definition |
+Cash Plan Freshness is a status mechanism that tells users whether their 30-day financial plan still reflects current conditions.
+
+After a user reviews a personalized cash-flow recommendation, FinWise marks the plan:
+
+**Current**
+
+When a material change affects the forecast—for example:
+
+- a projected cash-buffer breach
+- a meaningful invoice change
+- a significant change in upcoming outgoings
+
+the status changes to:
+
+**Needs Review**
+
+FinWise then surfaces one relevant recommended action.
+
+Once the user reviews that action, the plan returns to:
+
+**Current**
+
+---
+
+## Experience
+
+<img width="647" height="427" alt="FinWise Cash Plan Freshness concept" src="https://github.com/user-attachments/assets/9f82eb06-c883-4ea8-998b-78e6e7490684" />
+
+| Moment | User Experience |
 | --- | --- |
-| Unit of analysis | Eligible trial and paid users with a connected primary business account. |
-| Treatment | Cash Plan Freshness status plus a single material-change review prompt. |
-| Control | Existing forecast experience without the Freshness status or weekly material-change prompt. |
-| Evaluation window | Four weeks after the first personalized cash-flow action review. |
-| Primary engagement readout | Change in the Cash Plan Engagement KPI versus control. |
-| Product outcomes | Trial-to-paid conversion for trial users; four-week return rate and later retention for paid users. |
-| Guardrails | Notification opt-outs, dismissed prompts, bank-connection failure, and evidence that recommendations were not material or useful. |
+| **After first Aha** | “Your cash plan is current.” The user sees the forecast horizon and the action just reviewed. |
+| **Normal weekly cycle** | No unnecessary prompt if nothing material has changed. |
+| **Material forecast change** | Status becomes **“Needs Review”** and identifies one relevant action. |
+| **After action review** | FinWise confirms the plan is current again and shows what changed. |
 
-### Instrumentation required
+---
+
+## Why This Mechanic
+
+The mechanism reinforces the same behavior underlying the candidate Aha moment:
+
+> **Reviewing a personalized financial recommendation when it matters.**
+
+It does not reward:
+
+- arbitrary clicks
+- daily logins
+- points
+- badges
+- artificial streaks
+- time spent in the product
+
+Instead, it gives the user a practical reason to return:
+
+**Keep my financial decisions aligned with changing cash-flow conditions.**
+
+---
+
+## Natural Cadence, Not Artificial Frequency
+
+Small-business cash management has a natural operating rhythm.
+
+FinWise should therefore earn engagement when:
+
+**new information changes the financial plan**
+
+rather than demanding daily interaction.
+
+The primary behavioral motivation is grounded in a real risk: an outdated plan can allow a cash-buffer problem or delayed invoice to go unnoticed.
+
+This is a more defensible use of loss aversion than creating an artificial streak the user is afraid to lose.
+
+> **PM judgment:** Engagement should follow the cadence of the customer's problem, not the cadence of the product team's notification calendar.
+
+---
+
+## Relationship to the Growth Strategy
+
+Cash Plan Freshness extends the value demonstrated during activation.
+
+**First personalized action**  
+↓  
+**User understands FinWise's value**  
+↓  
+**Cash conditions change**  
+↓  
+**FinWise identifies a new material action**  
+↓  
+**User returns to review it**  
+↓  
+**The cash plan becomes current again**
+
+This creates repeated opportunities for FinWise to demonstrate useful personalized value.
+
+It supports the monetization strategy but does not replace the post-Aha paid-plan experiment.
+
+If the recommendations are generic, inaccurate, or irrelevant, the status mechanism itself will not create retention.
+
+The underlying recommendation must remain useful.
+
+---
+
+## Engagement Measurement
+
+The original available metrics included session duration and sessions per user.
+
+I would not use either as the primary definition of engagement.
+
+Longer sessions could indicate value—or friction.
+
+The measurement model therefore focuses on meaningful financial behaviors.
+
+| Dimension | Preferred Metric | Weight | Current Data Proxy | Proxy Score | Weighted |
+| --- | --- | ---: | --- | ---: | ---: |
+| **Depth** | Eligible users reviewing a personalized cash-flow action after a material forecast change | 50% | Financial-modeling usage: **36.73%** | 3 | 1.50 |
+| **Breadth** | Users completing account import → model → recommended-action review | 30% | Average of import **39.04%** and modeling **36.73%** = **37.89%** | 3 | 0.90 |
+| **Frequency** | Weekly cash-plan reviews per eligible user | 20% | Sessions per user: **6.62** | 7 | 1.40 |
+| **Cash Plan Engagement KPI** | `0.50 × depth + 0.30 × breadth + 0.20 × frequency` | **100%** | Proxy-based until event instrumentation exists |  | **3.80 / 10** |
+
+### Interpretation
+
+The current score is **directional only** because the available data uses aggregate feature metrics as proxies.
+
+It should not be treated as evidence that 37.89% of users actually complete the full workflow.
+
+The strongest observable signal is return frequency, while fewer than 40% of users use either of the current core feature proxies.
+
+Once event-level instrumentation exists, the proxy score should be replaced with actual user-level cohorts.
+
+---
+
+## Experiment Design
+
+| Element | Decision |
+| --- | --- |
+| **Population** | Trial and paid users with a connected primary business account |
+| **Control** | Existing forecast experience |
+| **Treatment** | Cash Plan Freshness status + one material-change review prompt |
+| **Evaluation window** | Four weeks after first personalized action review |
+| **Primary engagement readout** | Change in meaningful cash-plan review behavior versus control |
+| **Trial-user outcome** | Trial-to-paid conversion |
+| **Paid-user outcome** | Four-week return rate and longer-term retention |
+| **Guardrails** | Notification opt-outs, dismissed prompts, connection failures, and low-quality / non-material recommendations |
+
+---
+
+## Required Instrumentation
 
 ```text
 material_forecast_change_detected
@@ -68,18 +173,3 @@ cash_plan_review_started
 personalized_cashflow_action_reviewed
 cash_plan_action_completed_or_dismissed
 cash_plan_freshness_restored
-```
-
-Replace the baseline proxies with these event-level cohorts once instrumentation is live. In particular, measure the intersection of account import, modeling, and action review at the user level; do not infer it from separate aggregate feature-adoption rates.
-
----
-
-## Design stress test
-
-| Principle | How Cash Plan Freshness meets it |
-| --- | --- |
-| Meaningful behavior | It rewards reviewing a personalized cash-flow action, the candidate behavior that predicts retention. |
-| Natural cadence | It appears weekly or when a material forecast change occurs, not daily by default. |
-| Real motivation | The plan becoming stale represents a genuine loss of financial visibility, not a fake lost streak. |
-| Earned return | A prompt is tied to a concrete forecast change and one relevant action. |
-| Core value | The mechanism brings users back to an updated financial model and recommended action, not to points or badges. |
