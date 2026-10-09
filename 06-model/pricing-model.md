@@ -1,56 +1,201 @@
-# The Model · FinWise
+# FinWise — Monetization Strategy & Value Packaging
 
-> Monetization Strategy · Packaging Ongoing Value
-
-## Step 1 · Assess FinWise’s monetization stage
-
-| Field | FinWise decision |
-| --- | --- |
-| **Current stage** | **Stage 2 · Revenue Expansion** |
-| **Evidence** | FinWise has **$10M in ARR**, showing that businesses will pay for its financial-management value. Yet only **128 of 6,424 trials convert to paid (1.99%)**, so the central constraint is monetizing product value after it is experienced, rather than proving that any value exists. |
-
-FinWise is not at Stage 3 Optimization: a 1.99% trial-to-paid rate and 40% one-year paid retention indicate that the value-to-payment boundary and recurring value proposition still need structural work before price-point optimization.
+> **Monetization principle:** Let users experience the first personalized financial insight, then charge for keeping that value current.
 
 ---
 
-## Step 2 · Select the pricing model
+## Monetization Context
 
-| Field | FinWise decision |
-| --- | --- |
-| **Recommended model** | **Subscription**, delivered through the existing reverse trial. FinWise’s value is ongoing: connected data, refreshed cash-flow forecasts, material-change alerts, and recurring financial actions become more useful as the business continues operating. A recurring subscription matches that continuous value better than a one-off transaction fee, advertising, or a broad unrestricted free tier. |
-| **Key trade-off** | The trial must allow a user to receive the first personalized forecast and action before payment is requested; gating that insight earlier would reduce the Module 4 activation signals. But leaving ongoing forecast refreshes and alerts ungated after the trial would make the paid subscription less necessary. The boundary should therefore be between a first realized insight and the continuing, automatically refreshed cash plan. |
+FinWise has approximately **$10M in ARR**, demonstrating that customers are willing to pay for financial-management value.
+
+However:
+
+- only **128 of 6,424 trials converted to paid**
+- overall trial-to-paid conversion is **1.99%**
+- one-year paid retention is approximately **40%**
+
+Those signals suggest FinWise should focus on **Revenue Expansion and recurring value clarity** before optimizing price points.
+
+The immediate question is not:
+
+> **“Can FinWise charge more?”**
+
+It is:
+
+> **“What ongoing value should users clearly understand they are paying to continue?”**
 
 ---
 
-## Step 3 · Make the recommendation
+## Recommended Model
 
-| Field | FinWise decision |
-| --- | --- |
-| **Recommendation** | **Repackage the paid subscription around “Cash Plan Continuity.”** New trial users receive the first connected-account forecast and recommended action. After they review that action, the paid Cash Plan subscription unlocks ongoing automatic forecast refreshes, material cash-buffer alerts, weekly action reviews, and additional connected accounts. |
-| **Justification** | This preserves and targets the Module 4 leading indicator, `personalized_cashflow_action_reviewed`: no paywall appears before the user reaches the first value event, and the paid boundary is shown immediately after it. It also connects payment to the recurring Cash Plan Freshness behavior from Module 3, giving users a concrete reason to continue rather than a generic request to upgrade. Improving conversion from the existing trial base reduces the revenue pressure to keep increasing paid-acquisition spend. |
-| **The pricing bet** | **Packaging matched to value.** FinWise is validating whether the paid boundary belongs at ongoing cash-plan continuity—not at initial setup, a generic feature list, or a different sticker price. |
+Keep the existing:
 
-### What changes for the user
+**Subscription + reverse-trial model**
 
-| Moment | Trial value | Paid Cash Plan value |
+The product's value is naturally recurring because:
+
+- business financial data changes
+- cash-flow forecasts need refreshing
+- new risks emerge
+- invoices and outgoings change
+- financial decisions need to be revisited
+
+A recurring subscription therefore fits the value better than:
+
+- one-off transactions
+- advertising
+- an unrestricted free tier
+
+---
+
+## The Value Boundary
+
+The critical monetization decision is **where free trial value ends and paid value begins**.
+
+### Trial Should Prove Value
+
+A trial user should be able to:
+
+**Connect one account → receive a 30-day forecast → identify a cash-flow risk → review one recommended action**
+
+FinWise should not place the paywall before this moment.
+
+Doing so would ask the customer to pay before the product has demonstrated why its personalized financial insight matters.
+
+### Paid Should Continue Value
+
+After the first personalized action, paid access should extend the value through ongoing:
+
+- automatic forecast refreshes
+- material cash-buffer alerts
+- weekly action reviews
+- additional connected accounts
+- personalized recommendations as conditions change
+
+This creates a clear boundary:
+
+**First realized insight → trial value**  
+**Ongoing Cash Plan Continuity → paid value**
+
+---
+
+## Recommended Paid Proposition
+
+### Cash Plan Continuity
+
+Repackage the subscription around a customer outcome rather than a generic bundle of features.
+
+> **Keep your cash plan current as your business changes.**
+
+The subscription extends the first Aha experience instead of introducing an unrelated premium proposition.
+
+---
+
+## User Journey & Monetization
+
+| Moment | Trial Experience | Paid Value |
 | --- | --- | --- |
-| First value event | Connect one account, receive a first 30-day forecast, and review one recommended action. | — |
-| After Aha | See the post-Aha continuation prompt tied to the forecast just reviewed. | Choose ongoing Cash Plan Continuity. |
-| Ongoing use | Trial access remains limited to the reverse-trial period. | Automatic forecast refreshes, material-change alerts, weekly cash-plan reviews, and additional connected accounts. |
-
-Do **not** test a price increase, a discount, or a broad freemium tier before validating this package boundary. The available data does not identify willingness to pay by segment or show that price level is the primary constraint.
+| **Setup** | Connect the primary business account | — |
+| **First insight** | Receive the first 30-day cash-flow forecast | — |
+| **Aha** | Review one personalized recommended action | — |
+| **Monetization moment** | See the contextual continuation offer | Choose Cash Plan Continuity |
+| **Ongoing use** | Reverse-trial access ends according to the existing model | Forecast refreshes, material alerts, recurring reviews, and additional accounts |
 
 ---
 
-## Step 4 · Pricing recommendation memo
+## Why This Packaging
 
-**To:** FinWise Leadership Team  
-**Subject:** Put the paid boundary at ongoing cash-plan value
+The recommended structure aligns three parts of the product strategy:
 
-FinWise is in **Revenue Expansion**, not price optimization. $10M ARR shows small businesses will pay for our financial-management value, but only 2% of trial users convert and only 40% of paid customers remain after one year. The constraint is not proving initial value; it is capturing value at the point users understand why they need FinWise continuously.
+**Activation** proves the first value.  
+**Engagement** creates recurring reasons to review the cash plan.  
+**Monetization** charges for continuity of that recurring value.
 
-Keep the subscription and reverse-trial model. Repackage the paid offer around **Cash Plan Continuity**: every trial user can connect one account, receive a first 30-day cash-flow forecast, and review one recommended action. After that action review, paid access unlocks automatically refreshed forecasts, material cash-buffer alerts, weekly cash-plan reviews, and additional connected accounts.
+This avoids a common failure mode where:
 
-This is a packaging bet, not a discount or price-increase bet. It preserves the leading activation behavior—`personalized_cashflow_action_reviewed`—by avoiding a paywall before users see personalized value. It then makes the paid decision concrete: maintain a current cash plan and receive timely actions as conditions change. Improving conversion from the existing trial base will increase the return on paid acquisition without requiring more spend.
+**the product demonstrates one value proposition during onboarding but sells something different on the pricing screen.**
 
-Validate this with the post-Aha A/B test: show the Cash Plan Continuity prompt after users review their first recommended action, and measure trial-to-paid conversion through the reverse-trial period. Ship only if conversion improves without reducing seven-day cash-plan review.
+---
+
+## What I Would Not Test Yet
+
+I would not prioritize:
+
+- a price increase
+- discounting
+- a broad freemium tier
+- complex packaging by customer segment
+
+The available evidence does not establish that sticker price is the primary conversion problem or provide enough evidence about willingness to pay by segment.
+
+Testing those variables now would risk optimizing pricing before FinWise has validated the correct **value boundary**.
+
+---
+
+## The Monetization Bet
+
+> **Users should pay to continue receiving financial value they have already experienced—not to discover whether that value exists.**
+
+The bet is therefore primarily about **packaging and timing**, not about changing the subscription price.
+
+---
+
+## Commercial Logic
+
+Improving conversion from the existing trial base increases the return FinWise receives from acquisition already happening today.
+
+That creates a more disciplined growth sequence:
+
+**Improve value realization**  
+↓  
+**Improve trial monetization**  
+↓  
+**Validate recurring value**  
+↓  
+**Then consider scaling acquisition or optimizing price**
+
+This reduces the risk of increasing paid acquisition while the existing trial funnel still converts at approximately 2%.
+
+---
+
+## Validation
+
+The monetization strategy should be tested through the post-Aha experiment:
+
+**Control:** existing post-Aha experience  
+**Treatment:** Cash Plan Continuity offer immediately after the first personalized action  
+**Primary outcome:** trial-to-paid conversion  
+**Guardrail:** 7-day cash-plan review behavior
+
+The offer should expand only if paid conversion improves without materially weakening continued product engagement.
+
+---
+
+## Leadership Recommendation
+
+**To: FinWise Leadership Team**  
+**Subject: Put the paid boundary at ongoing cash-plan value**
+
+FinWise has already demonstrated that customers will pay for its financial-management product. The more immediate problem is that only about **2% of trial users convert**, while one-year paid retention remains approximately **40%**.
+
+I recommend keeping the subscription and reverse-trial model, but repositioning the paid offer around **Cash Plan Continuity**.
+
+Every trial user should be able to connect one account, receive an initial 30-day cash-flow forecast, and review one personalized recommended action before being asked to pay.
+
+Paid access should then answer a simple question:
+
+> **How do I keep this financial plan useful as my business changes?**
+
+That ongoing value includes refreshed forecasts, material cash-buffer alerts, recurring action reviews, and additional connected accounts.
+
+This is a packaging decision before it is a pricing decision.
+
+First validate whether users are more willing to pay when the subscription clearly extends value they have already experienced. Only after that should FinWise optimize price points, discounts, or more complex packaging.
+
+---
+
+## PM Takeaway
+
+> **Pricing is not only deciding how much to charge. It is deciding which value users should experience first and which value is strong enough to sustain an ongoing commercial relationship.**
+
+For FinWise, the paid boundary belongs between **the first realized financial insight** and **the ongoing continuity of that insight**.
