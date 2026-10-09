@@ -1,6 +1,6 @@
 # The Bet · FinWise
 
-> Module 1 · Ignite a PLG Motion
+> Growth Strategy · Product-Led Monetization
 
 ## Growth hypothesis
 
