@@ -1,6 +1,6 @@
 # The Model · FinWise
 
-> Module 6 · Pricing & Monetization
+> Monetization Strategy · Packaging Ongoing Value
 
 ## Step 1 · Assess FinWise’s monetization stage
 
