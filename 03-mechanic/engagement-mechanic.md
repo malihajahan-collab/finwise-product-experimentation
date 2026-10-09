@@ -1,6 +1,6 @@
 # The Mechanic · FinWise
 
-> Module 3 · Retention & Engagement
+> Engagement Strategy · Building a Valuable Return Loop
 
 ## Chosen gamification mechanic: Cash Plan Freshness
 
