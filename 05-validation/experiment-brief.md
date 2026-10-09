@@ -1,6 +1,6 @@
 # The Validation · FinWise
 
-> Module 5 · Experimentation Methods
+> Experiment Design · Testing the Monetization Bet
 
 ## Experiment brief
 
