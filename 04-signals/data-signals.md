@@ -1,6 +1,6 @@
 # The Signals · FinWise
 
-> Module 4 · Data & Analytics
+> Measurement Strategy · Signals That Matter
 
 ## Strategy context
 
