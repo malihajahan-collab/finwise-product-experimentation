@@ -5,8 +5,7 @@
 **Product Experimentation · Product-Led Growth · Fintech · A/B Testing · Monetization**
 
 **Maliha Jahan**  
-Product Management | AI Product Strategy | Experimentation  
-Product School — Product Experimentation Certification, 2026
+Product Experimentation & PLG Case study
 
 ---
 
@@ -240,9 +239,3 @@ The PM's job is not simply to generate ideas or ship features.
 It is to define the problem clearly, identify the behavior that matters, determine what evidence would change the decision, and build the fastest credible path to learning.
 
 ---
-
-## Certification
-
-Completed as part of the **Product Experimentation Certification — Product School, 2026**.
-
-This repository contains the full set of project artifacts developed across the certification.
