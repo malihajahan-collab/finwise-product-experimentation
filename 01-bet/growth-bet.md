@@ -1,96 +1,136 @@
-# The Bet · FinWise
+# FinWise — Growth Bet & PLG Strategy
 
-> Growth Strategy · Product-Led Monetization
+> **Growth principle:** Improve monetization after users experience meaningful value before spending more to acquire additional traffic.
 
-## Growth hypothesis
+---
+
+## Growth Problem
+
+Across 13 months, FinWise generated **6,424 trials and 128 paid conversions**, producing a **1.99% trial-to-paid conversion rate**.
+
+Monthly conversion remained consistently low, ranging from approximately **1.87% to 2.08%**.
+
+That stability matters.
+
+The problem does not appear to be one anomalous month. FinWise has a persistent challenge converting existing trial users into paying customers.
+
+---
+
+## Strategic Question
+
+> **Where should FinWise intervene first to create the highest-leverage growth learning?**
+
+There are multiple places the company could invest:
+
+- acquire more visitors
+- improve visit-to-trial conversion
+- increase feature usage
+- create referral loops
+- improve trial-to-paid conversion
+
+I prioritized **trial-to-paid conversion** because it sits closest to the commercial outcome and allows FinWise to test whether the existing trial experience creates enough value to justify payment.
+
+---
+
+## The Product Bet
+
+> **If FinWise presents a contextual paid-plan continuation prompt after a trial user has experienced personalized financial value, more users will convert to paid.**
+
+The strategy deliberately moves the monetization boundary **after the Aha moment**, rather than placing payment pressure during setup.
 
 ### Hypothesis
 
-> FinWise can increase trial-to-paid conversion by showing users who have imported data and completed a financial-modeling action a contextual prompt to continue on a paid plan.
+If eligible trial users:
 
-### Evidence behind the hypothesis
+1. import their financial data,
+2. receive a personalized financial model, and
+3. review a recommended cash-flow action,
 
-Across 13 months, 6,424 trials produced 128 paid conversions (1.99%). Trial-to-paid conversion stayed between 1.87% and 2.08% each month, while visit-to-trial conversion was 6.79% overall.
+then showing a contextual paid-plan continuation prompt at that moment should increase trial-to-paid conversion from:
 
-### Bet
+**1.99% → at least 2.4%**
 
-Focus first on the Revenue stage—trial to paid—rather than increasing acquisition spend or making a broad top-of-funnel redesign the primary experiment.
+The underlying belief is that users are more likely to pay after FinWise has demonstrated a concrete financial outcome rather than after generic feature exposure.
 
-### Testable hypothesis
-- IF we show trial users who have imported their data and completed a financial-modeling action a clear in-product paid-plan continuation prompt,
-- THEN trial-to-paid conversion will increase from 1.99% to 2.4%,
-- BECAUSE users who have completed key product actions may have experienced enough value for a contextual paid-plan prompt to influence their decision to convert,
-- MEASURED WITH a randomized A/B test over two weeks, using trial-to-paid conversion as the primary metric and data-import plus financial-modeling completion as guardrails.
+---
 
-### Strategic Pressure Test
+## Why This Bet Comes First
 
-- Most surprising pattern: Trial-to-paid conversion was highly stable at a low level, ranging from only 1.87% to 2.08% across all 13 months.
-- Biggest drop-off stage: Trials started → paid conversions: 128 of 6,424 trials converted (1.99%), a 98.01% drop-off.
-- Verdict: Prioritize a Revenue-stage trial-to-paid experiment first; monitor visit-to-trial conversion as a secondary opportunity.
-- What the data told me: Visit-to-trial has the larger absolute volume drop because it begins with many more people, but a one-percentage-point gain in trial-to-paid would add about 64 paid customers at the observed trial volume, compared with about 19 paid customers from a one-point visit-to-trial gain if the current trial-to-paid rate held.
+Trial-to-paid is the first growth constraint I would test because the existing data suggests meaningful leverage.
 
-### My bet
-- Growth loop: Content-driven. A small-business owner searches for a financial-task template, discovers a public FinWise template or guide, starts a trial and applies it using their own data, retains paid access to the completed workflow, then saves a data-free reusable template. FinWise reviews and publishes that template, making it discoverable to the next prospect and restarting the loop.
-- Reasoning: Content-driven is the first loop to test because searchable templates and guides can attract qualified small-business prospects without assuming they will invite teammates or refer peers. The loop uses reusable, data-free templates rather than public financial reports, removing the privacy and discoverability friction in the original loop.
-- Formalized: FinWise's biggest growth problem is converting trial users into paid customers because only 1.99% of trials became paid customers across the 13-month dataset, and the highest-leverage experiment I'd run first is a contextual paid-plan continuation prompt for trial users who have completed key financial actions.
+At the observed trial volume:
 
-### Measurement plan
+**+1 percentage point in trial-to-paid conversion ≈ 64 additional paid customers**
 
-| Item | Definition |
+By comparison, a one-percentage-point improvement in visit-to-trial conversion would produce approximately **19 additional paid customers** if the existing trial-to-paid rate remained unchanged.
+
+This does not mean acquisition is unimportant.
+
+It means the existing trial base provides a more immediate opportunity to test whether FinWise can convert demonstrated value into revenue.
+
+---
+
+## Strategic Pressure Test
+
+| Question | Finding |
 | --- | --- |
-| Method | Randomized A/B test: existing trial experience vs. contextual paid-plan continuation prompt after both key actions are complete. |
-| Duration | Two weeks, covering the standard reverse-trial window. |
-| Primary metric | Trial-to-paid conversion rate. |
-| Success threshold | Increase from 1.99% to at least 2.4%. |
-| Guardrail | Data-import and financial-modeling completion do not decline by more than 5% relative to control. |
+| **Is trial-to-paid weak because of one unusual month?** | No. Conversion remains between approximately **1.87% and 2.08%** across all 13 observed months. |
+| **Where is the sharpest percentage drop?** | Trial → paid. Only **128 of 6,424 trials** converted. |
+| **Should FinWise simply acquire more traffic first?** | Not yet. Increasing acquisition before improving monetization risks sending more users into the same low-converting experience. |
+| **Is feature usage enough evidence of value?** | No. Product activity must be separated from a meaningful user-value event. |
+| **What should be tested first?** | Whether monetization performs better when payment is introduced immediately after personalized value is demonstrated. |
 
 ---
 
-### Where FinWise will focus
+## What I Would Not Prioritize First
 
-FinWise will first test the **Revenue** stage: the transition from trial to paid. The bet is that a contextual paid-plan continuation prompt, shown only after a trial user has completed meaningful product actions, will increase the share of trial users who become paid customers.
+I would defer:
 
-### Why this bet comes first
+- increasing paid-acquisition spend
+- a broad homepage redesign
+- referral mechanics
+- collaboration-driven growth loops
+- pricing discounts
+- broad feature expansion
 
-1. It targets the stage closest to FinWise’s business outcome: paid customers.
-2. A one-percentage-point improvement in trial-to-paid conversion would add about **64 paid customers** at the observed 6,424-trial volume; a one-point improvement in visit-to-trial conversion would yield about **19 paid customers** if the current trial-to-paid rate remained unchanged.
-3. The 1.99% trial-to-paid rate is low and consistently narrow across the observed months, rather than being driven by one unusual month.
+None of those directly answers the immediate strategic question:
 
-### What FinWise will not do first
-
-- Increase paid-acquisition spend.
-- Make a broad homepage or trial-start redesign the primary experiment.
-- Launch referral or collaboration loops before testing whether the current trial base converts more effectively.
-
-FinWise will continue to monitor visit-to-trial conversion because it represents the largest absolute volume drop, but it is not the first validation bet.
+> **Can FinWise convert more of the users it already brings into the product once they experience meaningful value?**
 
 ---
 
-## Content-driven growth loop
+## Validation Plan
 
-This is the acquisition loop FinWise will develop first. It complements the Revenue experiment above: useful, searchable templates bring in qualified prospects; the trial experience then creates the opportunity to convert them to paid customers.
+| Element | Decision |
+| --- | --- |
+| **Method** | Randomized A/B experiment |
+| **Population** | Eligible reverse-trial users who reach the candidate Aha moment |
+| **Control** | Existing post-Aha experience |
+| **Treatment** | Contextual paid-plan continuation prompt |
+| **Primary metric** | Trial-to-paid conversion |
+| **Baseline** | **1.99%** |
+| **Target** | **≥2.4%** |
+| **Guardrail** | Core activation / engagement behavior must not materially deteriorate |
+| **Readout** | After users complete the reverse-trial window |
+
+> **Decision principle:** Do not optimize for prompt clicks. The treatment earns rollout only if more eligible users become paying customers without damaging the value experience that got them there.
+
+---
+
+## Acquisition Loop — Content-Driven Growth
+
+The monetization bet addresses conversion, but FinWise also needs a scalable way to bring qualified users into the product.
+
+The first acquisition loop I would develop is **content-driven growth**.
 
 ```mermaid
 flowchart LR
-    A["Trigger<br/>Small-business owner searches for a financial task template"]
-    B["Stage 1 · Discover<br/>Find a public FinWise template or guide"]
-    C["Stage 2 · Apply<br/>Start a trial, import data, and use the template"]
-    D["Stage 3 · Convert<br/>Retain paid access to the completed workflow"]
-    E["Stage 4 · Contribute<br/>Save a data-free reusable template"]
-    F["Outcome<br/>FinWise reviews and publishes the template"]
+    A["Small-business owner has a financial task"]
+    B["Finds a FinWise template or guide"]
+    C["Starts trial and applies it to their own data"]
+    D["Experiences personalized financial value"]
+    E["Converts and continues the workflow"]
+    F["Creates a reusable data-free template"]
+    G["FinWise publishes useful templates"]
 
-    A --> B --> C --> D --> E --> F --> A
-```
-
-### Descriptive steps
-
-1. **Trigger — Financial task need:** A small-business owner searches for help with a specific task, such as cash-flow forecasting or budgeting.
-2. **Discover:** They find a public FinWise template or guide that addresses that task.
-3. **Apply:** They start a reverse trial, import their business data, and use the template to complete a financial workflow.
-4. **Convert:** After experiencing the completed workflow, they retain paid access to FinWise.
-5. **Contribute:** A user saves a reusable, data-free template rather than sharing sensitive financial reports.
-6. **Outcome — New discoverable content:** FinWise reviews and publishes high-quality templates, giving the next small-business owner a resource to find and restarting the loop.
-
-### Friction removed
-
-The loop does **not** rely on customers publicly sharing financial reports, which may contain sensitive information and may not be discoverable. It uses reusable templates with no customer financial data as the content asset that can safely be published and found by future prospects.
+    A --> B --> C --> D --> E --> F --> G --> A
