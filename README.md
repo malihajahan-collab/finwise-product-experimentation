@@ -26,7 +26,7 @@ Move the monetization moment **after the first personalized financial action**, 
 |---:|---:|---:|---:|
 | Trial-to-paid baseline | Conversion target | Trials observed | Paid conversions |
 
-**[View Strategy Pitch →](https://malihajahan-collab.github.io/FinWise-analytics-Experimentation/Pitch.html)**  
+**[View Strategy Pitch →](https://malihajahan-collab.github.io/finwise-product-experimentation/Pitch.html)**  
 **[Try Live Prototype →](https://finwise-onboarding-p-7fon.bolt.host)**
 
 > **Product thesis:** Users should pay to continue receiving value they have already experienced—not to discover whether that value exists.
