@@ -1,69 +1,115 @@
 # FinWise — Monetization Experiment & Decision Framework
 
-> **Decision question:** Does introducing payment immediately after personalized value increase conversion without damaging continued engagement?
+> **Decision question:** Does introducing the paid relationship immediately after personalized value create enough incremental conversion to justify changing the product?
+
+---
+
+## Business Goal vs. Experiment Design
+
+FinWise’s commercial ambition is to improve overall trial-to-paid conversion from:
+
+**1.99% → 2.4%**
+
+That represents a **+0.41 percentage-point absolute lift**, or roughly **20% relative improvement**.
+
+However, a business target is not automatically a statistically feasible experiment threshold.
+
+Using a conventional two-sided test with:
+
+- **α = 0.05**
+- **80% statistical power**
+- baseline conversion = **1.99%**
+- target conversion = **2.4%**
+
+detecting that difference would require approximately:
+
+**~20,000 eligible users per variant**  
+**~40,000 eligible users total**
+
+FinWise observed only **6,424 total trials across 13 months**, and the experiment would randomize only the subset who reach the candidate Aha moment.
+
+Therefore:
+
+> **2.4% remains the commercial ambition, but it should not be treated as the experiment’s MDE until eligible traffic proves the test can detect a lift of that size.**
+
+---
+
+## PM Decision
+
+Before launching the experiment, I would separate three decisions:
+
+### 1. Business Target
+What improvement would materially matter to FinWise?
+
+**Current ambition: 1.99% → 2.4% overall trial-to-paid conversion.**
+
+### 2. Minimum Detectable Effect
+What effect can the experiment realistically detect given:
+
+- eligible user volume
+- baseline conversion among Aha-qualified users
+- test duration
+- desired power
+- acceptable false-positive risk
+
+**MDE: TBD from actual eligible-user traffic before launch.**
+
+### 3. Product Decision Threshold
+What evidence would justify shipping?
+
+This should combine:
+
+- effect magnitude
+- confidence interval
+- guardrail performance
+- commercial relevance
+
+rather than relying only on whether a p-value crosses 0.05.
 
 ---
 
 ## Hypothesis
 
-> **If FinWise shows eligible reverse-trial users a contextual paid-plan continuation prompt immediately after they review a personalized cash-flow action, trial-to-paid conversion will increase because the offer follows demonstrated financial value rather than interrupting setup.**
+> **If FinWise shows eligible reverse-trial users a contextual paid-plan continuation prompt immediately after they review a personalized cash-flow action, then more users will convert to paid because the offer follows demonstrated financial value rather than interrupting setup.**
 
 ---
 
 ## Experiment Design
 
 | Element | Decision |
-| --- | --- |
+|---|---|
 | **Experiment** | Post-Aha Paid-Plan Continuation Prompt |
 | **Method** | 50/50 user-level randomized A/B test |
 | **Randomization point** | Immediately after `personalized_cashflow_action_reviewed` |
 | **Population** | New reverse-trial users reaching the candidate Aha event |
-| **Control** | Existing trial experience without the contextual prompt at that moment |
+| **Control** | Existing post-Aha trial experience |
 | **Treatment** | Contextual paid-plan continuation screen |
 | **Primary metric** | Trial-to-paid conversion among randomized eligible users |
-| **Overall baseline** | **1.99%** |
-| **Target direction** | Toward **2.4%** overall conversion |
-| **Decision threshold** | Approximately **20% relative lift** versus concurrent control |
-| **Guardrail** | 7-day cash-plan review cannot decline by more than **5% relative to control** |
-| **Readout** | After enrolled users complete the reverse-trial period |
-
-The 20% relative-lift threshold approximates the magnitude required to move the observed **1.99%** conversion baseline toward **2.4%**, assuming the eligibility mix remains comparable.
+| **Commercial baseline** | **1.99% overall trial-to-paid conversion** |
+| **Commercial ambition** | Move overall conversion toward **2.4%** |
+| **Experiment MDE** | **Pre-commit after measuring eligible traffic and eligible-user conversion baseline** |
+| **Guardrail** | 7-day cash-plan review must not decline by more than **5% relative to control** |
+| **Readout** | After enrolled users complete the reverse-trial period and the planned sample is reached |
 
 ---
 
 ## Why an A/B Test
 
-The product is changing one discrete, reversible experience:
+The intervention is:
 
-**whether an eligible user sees the paid-plan continuation prompt immediately after the Aha event.**
+- discrete
+- reversible
+- delivered at a specific user-level moment
+- measurable against a concurrent control
 
-A user-level A/B test provides the clearest causal comparison.
+A standard user-level A/B test therefore provides the cleanest causal comparison.
 
-More complex methods are unnecessary for this decision:
+More complex approaches are unnecessary for the first test:
 
-- there is only one treatment, so a multi-armed bandit adds little value
-- the intervention happens at the individual-user level, making geo or switchback testing poorly matched
-- longer-term holdouts may be useful later for retention, but are not required to test the immediate conversion hypothesis
-
----
-
-## Treatment Experience
-
-### Control
-
-The user reviews the first personalized cash-flow action and continues through the existing trial experience.
-
-### Treatment
-
-Immediately after `personalized_cashflow_action_reviewed`, the user sees a concise screen that:
-
-- recaps the forecast just reviewed
-- reinforces the recommended action
-- explains that paid access keeps the cash plan current
-- offers **“Continue to paid plan”**
-- preserves **“Not now — continue my trial”** as a clear secondary option
-
-The treatment changes the monetization moment—not the preceding activation experience.
+- a multi-armed bandit adds little value because there is only one treatment
+- geo-testing is poorly matched to an in-product user-level intervention
+- switchback testing is unnecessary because treatment does not need to alternate over time
+- a long-term holdout may become useful later for retention analysis
 
 ---
 
