@@ -1,6 +1,8 @@
 # The Solution · FinWise
 
-Module 2 · Acquisition & Activation. The onboarding solution and the Aha moment that makes value land.
+Activation Strategy · Reaching Value Faster
+
+The onboarding solution and the Aha moment that makes value land.
 
 Strategy context
 
