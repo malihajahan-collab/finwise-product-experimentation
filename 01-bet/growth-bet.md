@@ -22,7 +22,7 @@ Focus first on the Revenue stage—trial to paid—rather than increasing acquis
 - BECAUSE users who have completed key product actions may have experienced enough value for a contextual paid-plan prompt to influence their decision to convert,
 - MEASURED WITH a randomized A/B test over two weeks, using trial-to-paid conversion as the primary metric and data-import plus financial-modeling completion as guardrails.
 
-### Hands-On Lab · Pressure-test
+### Strategic Pressure Test
 
 - Most surprising pattern: Trial-to-paid conversion was highly stable at a low level, ranging from only 1.87% to 2.08% across all 13 months.
 - Biggest drop-off stage: Trials started → paid conversions: 128 of 6,424 trials converted (1.99%), a 98.01% drop-off.
